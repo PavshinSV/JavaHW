@@ -49,6 +49,7 @@ public class competition {
         } else {
             System.out.println("Stand off");
         }
+        People gamer = new People("Pavshin", "Sergey",10,8);
 
     }
 }

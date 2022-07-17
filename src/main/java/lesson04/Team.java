@@ -41,4 +41,6 @@ public class Team {
     public List<People> getList(){
         return this.gamers;
     }
+    int f;
+    String str;
 }
