@@ -1,25 +1,24 @@
 package lesson04.part02;
 
-public class Passport extends Tasks {
-
+public class Insurance extends Tasks {
     public int thisNumber;
 
-    public Passport() {
+    public Insurance() {
         thisNumber = num();
     }
 
     @Override
     public int prioritet() {
-        return 10;
+        return 1;
     }
 
     @Override
     public int time() {
-        return 10;
+        return 20;
     }
 
     @Override
     public String toString() {
-        return "Task: Passport, Number: " + thisNumber + ", priority: " + prioritet() + ", time: " + time();
+        return "Task: Insurance, Number: " + thisNumber + ", priority: " + prioritet() + ", time: " + time();
     }
 }
