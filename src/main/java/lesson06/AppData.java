@@ -1,13 +1,14 @@
 package lesson06;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class AppData {
-    static private Map<String, List<Integer>> data;
+    private Map<String, List<Integer>> data = new HashMap<>();
 
-    public static Map<String, List<Integer>> getMap() {
+    public Map<String, List<Integer>> getMap() {
         return data;
     }
 
@@ -15,7 +16,9 @@ public class AppData {
         if (data.containsKey(key)) {
             data.get(key).add(toAdd);
         } else {
-            data.put(key, new ArrayList<>(toAdd));
+            List<Integer> tmp = new ArrayList<>();
+            tmp.add(toAdd);
+            data.put(key, tmp);
         }
     }
 
